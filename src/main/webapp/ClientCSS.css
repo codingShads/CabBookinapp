@@ -1,0 +1,260 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 3, 2022, 1:05:25 PM
+    Author     : ThileebanS
+*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.onlyButton{
+    margin: 30px;
+}
+.onlyButton a{
+    background-color: #c93a14;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+.col-md-4{
+    padding: 40px;
+    background-color: white;
+    border:  1px solid black;
+}
+
+#menu{
+    background: darkcyan;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#menu .logo img{
+    width: 40px;
+    margin-right: 15px;
+}
+
+#menu .logo{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 10px 0 25px;
+    text-decoration: none;
+    font-size: xx-large;
+}
+
+#menu .submenu{
+    margin-top: 40px;
+}
+
+#menu .submenu li{
+    list-style: none;
+    padding: 15px 0;
+}
+
+#menu .submenu li i{
+    color: rgb(134,141,151);
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 10px 0 25px;
+}
+
+#menu .submenu li a{
+    text-decoration: none;
+    color: black;
+}
+
+#menu .submenu li:hover{
+    background: blue;
+    cursor: pointer;
+}
+
+#menu .submenu a{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 10px 0 25px;
+    text-decoration: none;
+    font-size: xx-large;
+
+}
+
+#menu .submenu li:hover a{
+    color: brown;
+}
+
+#interface{
+    width: calc(100% - 300px);
+    margin-left: 300px;
+    position: relative;
+}
+
+#interface .navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: bisque;
+    padding: 15px 30px;
+    border-bottom: 3px solid;
+    position: fixed;
+    width: calc(100% - 300px);
+}
+
+#interface .navigation .search{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 14px;
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+#interface .navigation .profile{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#interface .navigation .profile i{
+    margin-right: 20px;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.i-name{
+    color: #444a53;
+    padding: 30px 30px 0 30px;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 70px;
+}
+
+.values{
+    padding: 30px 30px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.values .val-box{
+    background: burlywood;
+    width: 235px;
+    padding: 16px 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.values .val-box i{
+    font-size: 25px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.values .val-box h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.values .val-box span{
+    font-size:15px;
+    color: #828997;
+}
+
+.board{
+    width: 95%;
+    margin: 30px 0 30px 30px;
+    overflow: auto;
+    background: darkgrey;
+    border-radius: 8px;
+}
+
+.board h5{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.board p{
+    font-weight: 400;
+    font-size: 13px;
+    color: #787d8d;
+}
+
+.board .people{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: start;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+
+
+thead td{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+    background: darkolivegreen;
+    text-align: start;
+    padding: 15px;
+}
+
+tbody tr td{
+    padding: 10px 15px;
+}
+
+.form-add{
+    width: 95%;
+    margin: 30px 0 30px 30px;
+    overflow: auto;
+    background: darkgrey;
+    border-radius: 8px;
+    padding: 20px;
+
+}
+
+.interface .form-add label{
+    padding: 5px;
+}
+
+#btn-add{
+    background-color: darkred;
+    padding: 10%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
